@@ -12,4 +12,4 @@ attain to The following features
    And dead letter queue will send message to the original topic.  
    If message can not send to dead letter queue,System will blocking to retry infinite until it can be   
    just like rabbitmq  
-2. Because using the Spring Kafka, so it support multithreading.  
+2. Because using the Spring Kafka, so it supports multithreading.  
