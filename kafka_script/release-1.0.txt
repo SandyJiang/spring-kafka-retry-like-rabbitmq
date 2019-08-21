@@ -1,0 +1,4 @@
+#死信队列分区数必须大于等于topic分区数
+#Dead letter partition num must equal or great than to topic parition num.
+./kafka-topics.sh --create --zookeeper localhost:2181  --partitions 5 --replication-factor 1 --topic myHello11
+./kafka-topics.sh --create --zookeeper localhost:2181  --partitions 5 --replication-factor 1 --topic dlqDemo11

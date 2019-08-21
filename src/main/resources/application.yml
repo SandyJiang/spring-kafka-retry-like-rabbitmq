@@ -1,0 +1,11 @@
+server:
+  port: 9000
+kafka:
+  bootstrap-servers: kafka.5hefeng.com:9092
+  dlqName: dlqDemo11
+  groupName: testGroup11
+  #Message will send to dead letter queue after maxAttempts retries and will be ack automatic.
+  maxAttempts: 3
+  autoReset: latest
+  retryPeriod: 1000
+  currency: 5
