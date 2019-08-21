@@ -6,7 +6,7 @@
   这就像rabbitmq一样.  
 2.因为使用了Spring Kafka所以天然支持单客户端多线程消费,1分区对应1线程  
 
-Using Spring Kafka的DeadLetterPublishingRecoverer和SeekToCurrentErrorHandler.
+Using Spring Kafka's DeadLetterPublishingRecoverer and SeekToCurrentErrorHandler.
 attain to The following features. Before using please run /kafka_script/release-1.0.txt  
 1. Message will send to dead letter queue after maxAttempts retries and will be ack automatic   
    And dead letter queue will send message to the original topic.  
