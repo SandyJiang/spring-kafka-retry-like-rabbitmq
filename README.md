@@ -8,8 +8,8 @@
 
 Using Spring Kafka的DeadLetterPublishingRecoverer和SeekToCurrentErrorHandler.
 attain to The following features
-1. Message will send to dead letter queue after maxAttempts retries and will be ack automatic 
-   And dead letter queue will send message to the original topic.
-   If message can not send to dead letter queue,System will blocking to retry infinite until it can be 
-   just like rabbitmq
-2. Because using the Spring Kafka, so it support multithreading.
+1. Message will send to dead letter queue after maxAttempts retries and will be ack automatic   
+   And dead letter queue will send message to the original topic.  
+   If message can not send to dead letter queue,System will blocking to retry infinite until it can be   
+   just like rabbitmq  
+2. Because using the Spring Kafka, so it support multithreading.  
