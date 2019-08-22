@@ -13,8 +13,8 @@ design purpose: Using kafka can fast retry, no lost message, and do not influenc
 
 Using Spring Kafka's DeadLetterPublishingRecoverer and SeekToCurrentErrorHandler.
 attain to The following features. Before using please run /kafka_script/release-1.0.txt  
-1. Message will send to dead letter queue after maxAttempts retries and will be ack automatic   
-   And dead letter queue will send message to the original topic.  
-   If message can not send to dead letter queue,System will blocking to retry infinite until it can be   
+1. The message that sending to dead letter queue after MaxAttempts retried a couple of times will be  
+   acknowledged automatically And dead letter queue will send message to the original topic.  If message 
+   can not send to dead letter queue,System will be blocked to retry infinite until it can be,    
    just like rabbitmq  
 2. Because using the Spring Kafka, so it supports multithreading.  
